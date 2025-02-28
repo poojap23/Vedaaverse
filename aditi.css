@@ -1,0 +1,537 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero span {
+    color: #6f3cc8;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+    color:palevioletred;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    margin-right: 10px;
+}
+
+/* Input Field */
+.input-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-container input {
+    width: 400px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.send-btn {
+    background-color: #6f3cc8;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+.features h3 {
+    font-size: 16px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.features h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: #6f3cc8;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline:hover::after {
+    width: 0%;
+}
+
+/* Feature Boxes */
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Icons */
+.feature-box img {
+   width: 80px;
+   height:80px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+/* Icon Hover Effect */
+.feature-box:hover img {
+    transform: rotate(360deg);
+}
+
+/* Text */
+.feature-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .feature-box {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features h2 {
+        font-size: 32px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+    }
+}
+
+/* Increased Box Size */
+.choose-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 32px 38px; /* Increased padding for a larger box */
+    border-radius: 18px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-in-out forwards;
+    min-height: 140px; /* Increased height */
+}
+
+/* Icon Size */
+icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 34%;
+    background: transparent;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Text Size Adjustment */
+.text h4 {
+    font-size: 22px; /* Slightly larger heading */
+}
+
+.text p {
+    font-size: 17px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .choose-container {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-box {
+        padding: 28px;
+        min-height: 120px;
+    }
+}
+
+/* Section Background */
+.why-choose {
+    text-align: center;
+    padding: 100px 10%;
+    background-color: #f7f3ff; /* Light lavender background */
+}
+
+/* Title Styling */
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #6f3cc8; /* Matching the purple accent */
+}
+
+/* Subtitle */
+.subtext {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Container Grid Layout */
+.choose-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Individual Box Styling */
+.choose-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 22px 28px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Icon Styling */
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(111, 60, 200, 0.1);
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Text Styling */
+.text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+}
+
+.text p {
+    font-size: 16px;
+    color: #666;
+    font-family: "Inter", sans-serif;
+}
+
+/* Hover Effects */
+.choose-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .choose-container {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-box {
+        padding: 20px;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0F111A;
+    color: #D1D5DB;
+    padding: 60px 10%;
+    text-align: left;
+}
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F6F3FF;
+    color: #333;
+    text-align: center;
+}
+
+/* Section Styling */
+.get-in-touch {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading */
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: center;
+}
+
+/* Contact Box */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 160px; /* Increased height */
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Styling */
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+/* Text Styling */
+.text h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button Styling */
+.cta-button {
+    margin-top: 30px;
+    background-color: #8A4DFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #7538E6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        min-height: 140px;
+    }
+}
+/* Footer Grid Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* Footer Heading */
+.footer h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Footer Links & Text */
+.footer p, .footer a {
+    font-size: 18px;
+    color: #A1A5AF;
+    text-decoration: none;
+    line-height: 1.8;
+    display: block;
+}
+
+.footer a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/* Bottom Copyright Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
