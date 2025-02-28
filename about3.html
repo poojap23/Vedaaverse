@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="about3.css">
+</head>
+<body>
+
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class="logo">
+        <img src="logo.jpg" alt="Vedaa Verse Logo">
+        <span>Vedaa Verse</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="about3.html">About Us</a></li>
+        <li><a href="explore.html">Explore Program</a></li>
+        <li><a href="partners.html">Partner with Us</a></li>
+     
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">
+                Support
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="#" class="btn purple-btn">Get Started</a></li>
+    </ul>
+</nav>
+
+<style>
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    width: 100vw; /* Full width */
+    max-width: 90%; /* Ensure it doesn't shrink */
+    margin: 0; /* Remove margin to prevent gaps */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for better visibility */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #6f3cc8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+    position: relative;
+   
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size:18px;
+    font-family:sans-serif;
+}
+
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Default color before transition */
+    font-weight: 500;
+    transition: color 0.3s cubic-bezier(0.4, 0.2, 1);
+}
+
+.nav-links a:hover {
+    color: #6f3cc8; /* Color after transition */
+}
+
+
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.purple-btn {
+    background-color: rgb(139 92 246 );
+    color: white;
+}
+
+.pink-btn {
+    background-color: #ff4da6;
+    color: white;
+}
+
+.white-btn {
+    background-color: white;
+    border: 2px solid #ccc;
+    color: black;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SVG Arrow */
+.arrow-icon {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+</style>
+
+
+    <section class="hero">
+        <h1>Empowering Careers Through <br> Expert Guidance</h1>
+        <p>
+            At Vedaa Verse, we're dedicated to transforming aspirations into achievements. 
+            Our comprehensive placement preparation program equips students with the skills 
+            and confidence needed to excel in their careers.
+        </p>
+        <button>
+            <a href="explore.html#pricing-section" id="joinProgramBtn" style="text-decoration: none; color: inherit;">Join Our Program</a>
+
+        </button>
+        
+    </section>
+
+
+    <section class="story">
+        <h2>Our Story</h2>
+        <div class="underline"></div>
+        <p class="story-text" >
+            Founded with a vision to bridge the gap between education and industry requirements, 
+            Vedaa Verse has grown from a small initiative to a comprehensive career development platform. 
+            Our journey began with a simple goal: to empower students with the right skills and mindset 
+            needed for professional success.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">
+                    🚀 <!-- Replace with an actual icon if using FontAwesome -->
+                </div>
+                <h3>Our Mission</h3>
+                <p>
+                    To empower students with the knowledge, skills, and confidence needed to achieve 
+                    their career goals. We believe in creating an ecosystem where talent meets opportunity, 
+                    and dreams transform into reality through personalized guidance and industry-aligned training.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    👁 <!-- Replace with an actual icon if using FontAwesome -->
+                </div>
+                <h3>Our Vision</h3>
+                <p>
+                    To be the leading platform that transforms education into meaningful careers, creating a 
+                    world where every student has the opportunity to reach their full potential. We envision 
+                    being the bridge that connects academic excellence with professional success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats">
+        <div class="stat-item">
+            <h2>95%</h2>
+            <p>Placement Rate</p>
+        </div>
+        <div class="stat-item">
+            <h2>50+</h2>
+            <p>Industry Partners</p>
+        </div>
+        <div class="stat-item">
+            <h2>10k+</h2>
+            <p>Success Stories</p>
+        </div>
+        <div class="stat-item">
+            <h2>4.8/5</h2>
+            <p>Student Satisfaction</p>
+        </div>
+    </section>
+
+    <section class="core-values">
+        <h2>Our Core Values</h2>
+        <p>These principles guide everything we do at Vedaa Verse</p>
+        
+        <div class="values-container">
+            <div class="value-card">
+                <div class="icon">
+                    🎓
+                </div>
+                <h3>Student-Centric</h3>
+                <p>We put our students first in everything we do, ensuring personalized attention and growth.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="icon">
+                    🎯
+                </div>
+                <h3>Result-Oriented</h3>
+                <p>Our programs are designed to deliver measurable outcomes and real-world success.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="icon">
+                    🏆
+                </div>
+                <h3>Excellence</h3>
+                <p>We strive for excellence in our teaching methods and student achievements.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="icon">
+                    📖
+                </div>
+                <h3>Continuous Learning</h3>
+                <p>We embrace innovation and stay updated with industry demands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h3>Vedaa Verse</h3>
+            <p>Transforming careers through expert mentorship and comprehensive placement preparation.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="program.html">Program</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+            <h3>Resources</h3>
+            <a href="blog.html">Blog</a>
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <div>
+            <h3>Connect</h3>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://linkedin.com/company/vedaaverse" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/vedaaverse" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Vedaa Verse. All rights reserved.
+    </div>
+</footer>
+
+<!-- Footer Styling -->
+<style>
+    .footer {
+        background-color: #0F111A;
+        color: #D1D5DB;
+        padding: 60px 10%;
+        text-align: left;
+    }
+
+    /* Footer Grid Layout */
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+
+    /* Footer Heading */
+    .footer h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    /* Footer Links & Text */
+    .footer p, .footer a {
+        font-size: 18px;
+        color: #A1A5AF;
+        text-decoration: none;
+        line-height: 1.8;
+        display: block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* Hover Effect */
+    .footer a:hover {
+        color: var(--primary); /* Gold color on hover */
+        text-decoration: underline;
+    }
+
+    /* Bottom Copyright Section */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 16px;
+        border-top: 1px solid #333;
+        padding-top: 20px;
+    }
+</style>
+
+</body>
+</html>
+
+
+
+

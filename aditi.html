@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedaa Verse</title>
+    <link rel="stylesheet" href="aditi.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.jpg" alt="Vedaa Verse Logo">
+        <span>Vedaa Verse</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="about3.html">About Us</a></li>
+        <li><a href="explore.html">Explore Program</a></li>
+        <li><a href="partners.html">Partner with Us</a></li>
+     
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">
+                Support
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="explore.html#pricing-section" class="btn purple-btn">Get Started</a></li>
+
+    </ul>
+</nav>
+
+<style>
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+   
+    max-width: 100%; /* Ensure it doesn't shrink */
+    margin: 0; /* Remove margin to prevent gaps */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for better visibility */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #6f3cc8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+    position: relative;
+   
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size:18px;
+    font-family:sans-serif;
+}
+
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Default color before transition */
+    font-weight: 500;
+    transition: color 0.3s cubic-bezier(0.4, 0.2, 1);
+}
+
+.nav-links a:hover {
+    color: #6f3cc8; /* Color after transition */
+}
+
+
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.purple-btn {
+    background-color: rgb(139 92 246 );
+    color: white;
+}
+
+.pink-btn {
+    background-color: #ff4da6;
+    color: white;
+}
+
+.white-btn {
+    background-color: white;
+    border: 2px solid #ccc;
+    color: black;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SVG Arrow */
+.arrow-icon {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+</style>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your One-Stop Solution for <br> <span>Placement Preparation</span></h1>
+            <p>Explore the Ease of Placement</p>
+            <div class="buttons">
+                <button class="btn pink-btn">Get Started</button>
+               <button class="btn white-btn">
+                <a href="explore.html#features-section" class="no-underline">Advisors</a>
+
+
+                </button>
+                
+
+            </div>
+
+            <!-- Input Field -->
+
+            <style>
+                .input-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            
+                .input-container input {
+                    flex: 0;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+            
+                .send-btn {
+                    background-color:cubic bezier(0.4,0.2,1);
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            
+                .send-btn:hover {
+                    background-color:rgb(139 92 246);
+                }
+            </style>
+            
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="Enter your details">
+                <button class="send-btn" onclick="redirectToForm()">➤</button>
+            </div>
+            
+            <script>
+                function redirectToForm() {
+                    let userInput = document.getElementById("userInput").value.trim();
+                    if (userInput !== "") {
+                        window.location.href = "https://tally.so/r/wz1BPa";
+                    } else {
+                        alert("Please enter your details before proceeding.");
+                    }
+                }
+            </script>
+           
+
+
+    <!-- Features Section -->
+<section class="features">
+    <h3>FEATURES</h3>
+    <h2><span class="highlight">Fit Yourself</span> in Every Corner of the <span class="underline">World</span></h2>
+    
+    <div class="feature-container">
+        <div class="feature-box">
+            <img src="students icon 1.png " alt="Students" >
+            <h4>60K+ Students</h4>
+            <p>Grow yourself with our online courses.</p>
+        </div>
+        <div class="feature-box">
+            <img src="mentor icon 4.png" alt="Mentors" >
+            <h4>120+ Mentors</h4>
+            <p>Development of our language courses.</p>
+        </div>
+        <div class="feature-box">
+            <img src="partners icon.jpeg" alt="Instructor">
+            <h4>Top Instructor</h4>
+            <p>Best teachers for excellent tutoring.</p>
+        </div>
+        <div class="feature-box">
+            <img src="features icon 2.png" alt="Partners">
+            <h4>65 Partners</h4>
+            <p>Achieve with our online certificates.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2 class="title">Why Choose <span class="highlight">Vedaa Verse</span></h2>
+    <p class="subtext">Join thousands of students who have successfully transformed their careers through our program</p>
+    
+    <div class="choose-container">
+        <div class="choose-box">
+            <div class="icon">
+                <img src="resume 2.png" alt="Resume Icon">
+            </div>
+            <div class="text">
+                <h4>Resume & LinkedIn Optimization</h4>
+                <p>Get your profile reviewed and optimized by industry professionals</p>
+            </div>
+        </div>
+        <div class="choose-box">
+            <div class="icon">
+                <img src="schedule icon.jpeg" alt="Schedule Icon">
+            </div>
+            <div class="text">
+                <h4>Flexible Schedule</h4>
+                <p>Learn at your own pace with recorded sessions</p>
+            </div>
+        </div>
+        <div class="choose-box">
+            <div class="icon">
+                <img src="batch icon.png" alt="Batch Size Icon">
+            </div>
+            <div class="text">
+                <h4>Small Batch Size</h4>
+                <p>Personalized attention in small groups</p>
+            </div>
+        </div>
+        <div class="choose-box">
+            <div class="icon">
+                <img src="placement icon.png" alt="Placement Icon">
+            </div>
+            <div class="text">
+                <h4>Placement Support</h4>
+                <p>Dedicated support until you land your dream job</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="get-in-touch">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="subtext">
+            Have questions? We're here to help you start your journey towards placement success
+        </p>
+        
+        <div class="contact-grid">
+            <div class="contact-box">
+                <div class="icon">
+                    <img src="phone icon.png" alt="Phone Icon">
+                </div>
+                <div class="text">
+                    <h4>Phone</h4>
+                    <p>+91 (123) 456-7890</p>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="icon">
+                    <img src="email icon.png" alt="Email Icon">
+                </div>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>contact@vedaaverse.com</p>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="icon">
+                    <img src="location icon.png" alt="Location Icon">
+                </div>
+                <div class="text">
+                    <h4>Location</h4>
+                    <p>Bihar, India</p>
+                </div>
+            </div>
+        </div>
+        <button class="cta-button">
+            <a href="contact.html#contact-form" style="text-decoration: none; color: inherit;">Schedule a Call</a>
+        </button>
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h3>Vedaa Verse</h3>
+            <p>Transforming careers through expert mentorship and comprehensive placement preparation.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="program.html">Program</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+            <h3>Resources</h3>
+            <a href="blog.html">Blog</a>
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <div>
+            <h3>Connect</h3>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://linkedin.com/company/vedaaverse" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/vedaaverse" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Vedaa Verse. All rights reserved.
+    </div>
+</footer>
+
+<!-- Footer Styling -->
+<style>
+    /* Footer Styling */
+    .footer {
+        background-color: #0F111A;
+        color: #D1D5DB;
+        padding: 60px 5%;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer Grid Layout */
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Footer Heading */
+    .footer h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    /* Footer Links & Text */
+    .footer p, .footer a {
+        font-size: 18px;
+        color: #A1A5AF;
+        text-decoration: none;
+        line-height: 1.8;
+        display: block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* Hover Effect */
+    .footer a:hover {
+        color:var(--primary); /* Gold color on hover */
+        text-decoration: underline;
+    }
+
+    /* Bottom Copyright Section */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 16px;
+        border-top: 1px solid #333;
+        padding-top: 20px;
+        width: 100%;
+    }
+</style>
+
+
+<script>
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                
+                const targetId = this.getAttribute("href").split("#")[1]; // Extract section ID
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    history.pushState(null, null, `#${targetId}`); // Update URL without reloading
+                }
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
